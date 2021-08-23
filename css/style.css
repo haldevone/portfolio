@@ -14,7 +14,7 @@
 
     --color-light: #FDF7FF;
     --color-dark: #2b223a;
-    --color-accent: #7510F7;
+    --color-accent: #5510f7;
     --color-medium:#9B89B4;
 
     --fs-h1: 3rem;
@@ -292,9 +292,9 @@ header {
 /* Skills section */
 
 .my-skills {
+    
+    background-image: url(../images/laptop.jpg);
     background-color: var(--color-dark);
-    /* background-image: url(../images/pandaLogo.png); */
-    background: var(--color-dark);
     background-size: cover;
     color: var(--color-light);
     text-align: center;
