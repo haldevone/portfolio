@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/aa712958c8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro
-    :wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400&family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro
+    :wght@300;900&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -36,41 +36,119 @@
         <h1 class="section__title section__title--intro">
             Hi, I am <strong>Enon Hall</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">Web & Game Dev</p>
-        <img src="images/pandaLogo.png" alt="picture of Enon" class="intro__img">
+        <div class="section__subtitle section__subtitle--intro"> 
+            <div class="banner-text-container animate rolling-letters">
+                <span>a </span>
+			    <span>w</span><span>e</span><span>b </span>
+                <span> & </span>
+                <span>g</span><span>a</span><span>m</span><span>e </span>
+                <span>d</span><span>e</span><span>v</span>
+            </div>
+            <img class="banner" src="images/banner.png" alt="">
+        </div>
+        <div class="intro-round">
+            <img src="images/profile.png" onmouseover="this.src='images/profileCartoon.png'"
+            onmouseout="this.src='images/profile.png'" alt="picture of Enon" class="intro__img">
+        </div>
     </section>
 
     <!-- My Skill -->
     <section class="my-skills" id="skills">
         <h2 class="section__title section__title--skills">What I do</h2>
-        <div class="skills">
-            <div class="skill">
-                <img src="images/mobile2.png" alt="" class="skill-img">
-                <h3 class="skill-header">Front End Development</h3>
-                <p>Html, Css, Github, Javascript</p>
-            </div>
-            <!--/ skill -->
-            <div class="skill">
-                <img src="images/cogwheel.png" alt="" class="skill-img">
-                <h3 class="skill-header">Back End Development</h3>
-                <p>PHP, MySQL</p>
-            </div>
-            <!--/ skill -->
-            <div class="skill">
-                <img src="images/brush.png" alt="" class="skill-img">
-                <h3 class="skill-header">Design</h3>
-                <p>Photoshop, Blender, 3d Coat</p>
-            </div>
-            <div class="skill">
-                <img src="images/gameController2.png" alt="" class="skill-img">
-                <h3 class="skill-header">Game Development</h3>
-                <p>Unity, C#</p>
-            </div>
-            <!--/ skill -->
-        </div>
-        <!-- skills -->
 
-        <a href="#work" class="btn">My Work</a>
+    </section>
+    <section class="skills-container">
+        <div class="skills-wrapper">
+            <div class="skills">
+                <!--/ skill -->
+                <div class="skill">
+                    <img src="images/mobile2.png" alt="" class="skill-img">
+                    <h3 class="skill-header">Web Development</h3>
+                    <h4 class="skill-subheader">My Tech Languages:</h4>
+                    <p>Html, Css, Javascript, React</p>
+                    <p>Next, Typescript</p>
+                    <p>Github, Firebase, PHP, MySQL</p>
+                </div>
+    
+                <!--/ skill -->
+                <div class="skill">
+                    <img src="images/brush.png" alt="" class="skill-img">
+                    <h3 class="skill-header">Design</h3>
+                    <h4 class="skill-subheader">My Design Software:</h4>
+                    <p>Photoshop, Blender</p>
+                    <p>3d Coat, Substance painter</p>
+                </div>
+                <div class="skill">
+                    <img src="images/gameController2.png" alt="" class="skill-img">
+                    <h3 class="skill-header">Game Development</h3>
+                    <h4 class="skill-subheader">My Game Tech:</h4>
+                    <p>Unity, C#</p>
+                </div>
+                <!--/ skill -->
+            </div>
+        </div>
+        <div class="work-btn">
+            <a href="#work" class="btn">My Work</a>
+        </div>
+
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+        <div class="cards">
+
+            <!-- Card Item 01 -->
+            <figure class="card-item">
+                <div>
+                    <img src="images/project1.png" alt="" class="card-item-img"> 
+                </div>
+                
+                <figcaption>
+                    <h3 class="card-item-header">My Company Blog Site</h3>
+                    <p class="card-item-info"> React CSS JS HTML</p>
+                    <button class="work-btn" onclick="window.location.href='http://haldevone.com/'">More Info</button>
+                </figcaption>
+            </figure>
+
+            <!-- Card Item 02 -->
+            <figure class="card-item">
+                <a href="http://haldevone.com/" class="card-item-link">
+                    <img src="images/project2.png" alt="" class="card-item-img"> 
+                </a>
+                <figcaption>
+                    <h3 class="card-item-header">Mobile App Game</h3>
+                    <p class="card-item-info"></p>
+                    <button class="work-btn">More Info</button>
+                </figcaption>
+            </figure>
+
+            <!-- Card Item 03 -->
+            <figure class="card-item">
+                <a href="https://thehangmanreact.netlify.app/" class="card-item-link">
+                    <img src="images/pandaLogo.png" alt="" class="card-item-img"> 
+                </a>
+                <figcaption>
+                    <h3 class="card-item-header">Hangman Game</h3>
+                    <p class="card-item-info"></p>
+                    <button class="work-btn">More Info</button>
+                </figcaption>
+            </figure>
+            <!-- Card Item 03 -->
+
+            <figure class="card-item">
+                <a href="https://vedumstandvard.netlify.app/" class="card-item-link">
+                    <img src="images/pandaLogo.png" alt="" class="card-item-img"> 
+                </a>
+                <figcaption>
+                    <h3 class="card-item-header">Client Dentist site</h3>
+                    <p class="card-item-info"></p>
+                    <button class="work-btn">More Info</button>
+                </figcaption>
+            </figure>
+        </div>
     </section>
 
     <!-- About Me -->
@@ -93,43 +171,6 @@
         </div>
         <img src="images/pandaLogo.png" alt="" class="about-me__img">
 
-    </section>
-
-    <!-- My Work -->
-    <section class="my-work" id="work">
-        <h2 class="section__title section__title--work">My Work</h2>
-        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-
-        <div class="portfolio">
-
-            <!-- Portfolio Item 01 -->
-            <a href="http://haldevone.com/" class="portfolio__item">
-                <p class="portfolio__item--info">My Company Blog Site</p>
-                <img src="images/project1.png" alt="" class="portfolio__img"> 
-            </a>
-
-            <!-- Portfolio Item 02 -->
-            <a href="https://apps.apple.com/us/app/panda-addie-play-learn/id1486103714" class="portfolio__item">
-                <p class="portfolio__item--info">Mobile App Game</p>
-                <img src="images/project2.png" alt="" class="portfolio__img">
-            </a>
-
-            <!-- Portfolio Item 01 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/pandaLogo.png" alt="" class="portfolio__img">
-            </a>
-
-            <!-- Portfolio Item 01 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/pandaLogo.png" alt="" class="portfolio__img">
-            </a>
-
-            <!-- Portfolio Item 01 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/pandaLogo.png" alt="" class="portfolio__img">
-            </a>
-
-        </div>
     </section>
 
     <!-- Footer -->
