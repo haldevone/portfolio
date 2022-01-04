@@ -21,6 +21,7 @@
     --color-accent: #320fce;
     --color-medium:#7510F7;
     --color-accentTwo: #6929ff;
+    --color-line: rgb(228, 225, 225);
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -96,7 +97,6 @@ strong {
     transform: scale(1.1);
 }
 
-
 /* Typography */
 
 h1,
@@ -150,8 +150,8 @@ h3 {
     width: 300px;
 }
 .banner {
-    width: 100%;
-    min-height: 68px;
+    width: 90%;
+    min-height: 55px;
 }
 
 .section__title--work{
@@ -394,13 +394,14 @@ header {
 .banner-text-container{
     text-transform: uppercase;
     position: absolute;
-    right: 6rem;
+    right: 8rem;
     top: 1.3rem;
 }
-@media (max-width: 600px){
+@media (max-width: 660px){
     .banner-text-container{
         left: 1rem;
         width: 290px;
+        top: 0.5rem;
     }
 }
 .animate span {
@@ -537,7 +538,7 @@ header {
     padding-bottom: 4em;
     background-color: var(--color-light);
     color: var(--color-dark);
-    border-color: var(--color-light-dark);
+    border-color: var(--color-line);
     border-style: solid;
 
 }
@@ -562,10 +563,10 @@ header {
         border-radius: 20px;
     }
     .skill:last-child{
-        border-left-color: var(--color-light-dark);
+        border-left-color: var(--color-line);;
     }
     .skill:first-child{
-        border-right-color: var(--color-light-dark);
+        border-right-color: var(--color-line);;
     }
     .work-btn{
         margin-top: 4rem;
@@ -629,7 +630,7 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    width: 580px;
+    max-width: 580px;
     height: 430px;
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.44);
@@ -647,12 +648,14 @@ header {
 .card-item-img{
     height: 100%;
     transition: 0.25s;
+    background-size: 100% auto;
 }
 .card-item:hover figcaption{
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.89);
     color: white;
 }
+
 .card-item-img{
     height: 100%;
     transition: 0.25s;
@@ -672,22 +675,36 @@ header {
     transition: 0.25s;
 }
 .card-item-header{
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
+    position: relative;
+    width: max-content;
+}
+.card-item-header::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-medium);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 600ms ease;
+}
+.card-item:hover .card-item-header::after{
+    transform: scaleX(1);
 }
 .card-item-info{
     font-size: 14px;
     line-height: 1.75;
 
 }
-/* @media (max-width: 660px){
-    .card-item{
-        height: 390px;
-    }
-    .card-item figcaption{
-        height: 380px;
-        bottom: -68%;
-    }
-} */
+.git-btn{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
 @media (max-width: 540px){
     .card-item{
         height: 370px;
@@ -695,9 +712,6 @@ header {
     .card-item figcaption{
         height: 370px;
         bottom: -75%;
-    }
-    .card-item-header{
-        padding-bottom: 1rem;
     }
 }
 @media (max-width: 450px){
@@ -708,12 +722,10 @@ header {
         height: 300px;
         bottom: -70%;
     }
-    .card-item-header{
-        padding-bottom: 1rem;
-    }
     .btn{
         padding: 0.6em 1.1em;
     }
+    
 }
 @media (max-width: 360px){
     .card-item{
@@ -724,9 +736,6 @@ header {
     .card-item figcaption{
         height: 280px;
         bottom: -68%;
-    }
-    .card-item-header{
-        padding-bottom: 1rem;
     }
     .card-item-info h4{
         font-size: var(--fs-body);
