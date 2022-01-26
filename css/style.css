@@ -91,6 +91,7 @@ strong {
     letter-spacing: 2px;
     font-weight: 700;
     transition: transform 200ms ease-in-out;
+    border: none;
 }
 
 .btn:hover {
@@ -155,13 +156,20 @@ h3 {
 }
 
 .section__title--work{
-margin-top: 5rem;
+    margin-top: 2rem;
 }
+/* .section__title--work::after{
+    content: "";
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    border-bottom: 2px solid rgba(77, 77, 77, 0.8);
+} */
+
 .section__subtitle--work {
-    color: var(--color-accentTwo);
     font-weight: var(--fw-bold);
     margin-bottom: 1em;
-    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
 }
 
 
@@ -337,7 +345,7 @@ header {
 
 .intro {
     position: relative;
-    padding-bottom: 10rem;
+    padding-bottom: 18rem;
 }
 .intro-round{
     border-radius: 50%;
@@ -465,8 +473,7 @@ header {
 
 /* Skills section */
 
-.my-skills {
-    
+.my-skills {   
     /* background-image: url(../images/laptop.jpg); */
     background-color: var(--color-accentTwo);
     background-size: cover;
@@ -611,10 +618,34 @@ header {
 
 
 /* MyWork */
+
+.my-work-banner{
+    background-color: var(--color-accentTwo);
+    width: 20%;
+    color: var(--color-light);
+    text-align: center;
+    padding: 0.1rem;
+    margin: 1rem auto;
+    border-radius: 20px;
+    /* box-shadow: 10px 10px rgb(151, 151, 151); */
+}
+.pointer{
+    height: 40px;
+	width: 40px;
+	background-color: var(--color-accentTwo);
+	margin: 0 auto;
+	transform: rotate(45deg);
+	border-radius: 0 0 12px 0;
+	margin-top: -36px;
+	position: relative;
+	left: calc(0.5vw - 10px);
+}
+
 .my-work {
     background-color: var(--color-light);
     color: var(--color-dark);
     text-align: center;
+    margin-bottom: 8rem;
 }
 
 .cards{
