@@ -34,10 +34,10 @@
 
 
 /* General Styles */
-p, span{
-    font-family: var(--ff-thin);
+span{
+    font-weight: 400;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p, span {
     font-family: var(--ff-quick);
 }
 h3{
@@ -153,6 +153,7 @@ h3 {
 .banner {
     width: 90%;
     min-height: 55px;
+    margin: 0 auto;
 }
 
 .section__title--work{
@@ -195,7 +196,7 @@ header {
     z-index: 100;
 
     transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    transition: transform 150ms cubic-bezier(.5, 0, .5, 1);
 }
 
 .nav__list {
@@ -235,6 +236,7 @@ header {
     }
     .nav__item{
         padding: 0 3rem;
+        cursor: pointer;
     }
     .nav__item a{
         text-decoration: none;
@@ -355,9 +357,25 @@ header {
     background-color: var(--color-accentTwo);
     position: relative;
     z-index: 2;
+    margin: 0 auto;
     margin-top: 2rem;
 }
-
+.section__title--intro{
+    margin: 0 auto;
+    width: 20rem;
+}
+.section__subtitle--intro{
+    margin: 0 auto;
+    top: 1rem;
+}
+.banner-text-container{
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 16rem;
+    top: 1rem;
+    position: absolute;
+    text-transform: uppercase;
+}
 
 
 @media (min-width: 800px) {
@@ -398,20 +416,23 @@ header {
         top: -6rem;
         width: calc(100% + 1.5em);
     }
+    .banner-text-container{
+        text-transform: uppercase;
+        position: absolute;
+        right: 8rem;
+        top: 1.3rem;
+        left: 70%;
+        right: 0;
+    }
 }
-.banner-text-container{
-    text-transform: uppercase;
-    position: absolute;
-    right: 8rem;
-    top: 1.3rem;
-}
-@media (max-width: 660px){
+
+/* @media (max-width: 660px){
     .banner-text-container{
         left: 1rem;
         width: 290px;
         top: 0.5rem;
     }
-}
+} */
 .animate span {
 	display: inline-block;
 }
@@ -479,11 +500,13 @@ header {
     background-size: cover;
     color: var(--color-light);
     text-align: center;
+    padding-bottom: 3rem;
 }
 
 .section__title--skills {
     color: var(--color-light);
     position: relative;
+    padding-bottom: 12rem;
 }
 
 .section__title--skills::after {
@@ -515,6 +538,7 @@ header {
 
 .skills-container{
     height: 590px;
+    background-image: url("../images/cogBackground.png");
 }
 .skills-wrapper{
     position: absolute;
@@ -527,7 +551,7 @@ header {
     justify-content: center;
     min-height: 450px;
     text-align: center;
-    margin-top: -13rem;
+    margin-top: -20rem;
 }
 .skill:last-child{
     border-top-right-radius: 20px;
