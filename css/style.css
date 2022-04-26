@@ -386,7 +386,7 @@ header {
 
 @keyframes FadeIn {
 	0% {
-		opacity: 0.3;
+		opacity: 0.4;
 	}
     /* 50% {
 		opacity: 0.6;
@@ -408,6 +408,10 @@ header {
 	100% {
 		transform: translateY(0);
 	}
+}
+
+.banner-text-container span{
+    font-weight: 500;
 }
 
 @media (min-width: 800px) {
