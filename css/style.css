@@ -321,7 +321,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--color-accent);
+    background: var(--color-light);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -361,8 +361,8 @@ header {
     width: 16rem;
     border-radius: 16rem;
     background: linear-gradient(#3800e7, #8a15ff);
-    -webkit-animation: gradient-fade 8s ease-in-out 3s infinite alternate;
-    animation: gradient-fade 8s ease-in-out 3s infinite alternate;
+    -webkit-animation: gradient-fade 6s ease-in-out 2s infinite alternate;
+    animation: gradient-fade 6s ease-in-out 2s infinite alternate;
 }
 .circles-main::after{
     top: 0;
@@ -544,9 +544,15 @@ header {
         text-transform: uppercase;
         position: absolute;
         right: 8rem;
-        top: 1.3rem;
+        top: 1.5rem;
         left: 70%;
         right: 0;
+    }
+}
+
+@media (max-width: 570px){
+    .banner-text-container{
+        top: 0.5rem;
     }
 }
 
@@ -599,7 +605,7 @@ header {
 
 .rolling-letters span{
 	opacity: 0;
-	transform: translate(-160px, -60px) rotate(-180deg) scale(4);
+	transform: translate(-160px, -60px) rotate(-180deg) scale(5);
 	animation: revolveScale .5s forwards;
 
 }
