@@ -965,16 +965,24 @@ header {
 
 /* Footer */
 .footer {
+    margin: 0;
     background: var(--color-accentTwo);
     color: var(--color-light);
     text-align: center;
-    padding: 2.5em 0;
+    padding-top: 2.5rem;
     font-size: var(--fs-h3);
     clip-path: ellipse(66% 100% at 50% 100%);
 }
 
 .footer a {
     color: inherit;
+}
+
+.footer p{
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    margin: 0;
 }
 
 .footer__link {

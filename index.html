@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Portfolio website</title>
+    <title>HalDevOne Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/aa712958c8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -16,9 +16,6 @@
 <body>
     <header>
         <div class="nav-top">
-            <div class="logo">
-                <!-- <img src="images/pandaLogo.png" alt=""> -->
-            </div>
             <button class="nav-toggle" aria-label="toogle navigation">
                 <span class="hamburger"></span>
             </button>
@@ -56,222 +53,234 @@
                     <span>g</span><span>a</span><span>m</span><span>e </span>
                     <span>d</span><span>e</span><span>v</span>
                 </div>
-                <img class="banner" src="images/banner.png" alt="">
+                <img class="banner" src="images/banner.png" alt="banner image">
             </div>
-            <div class="intro-round">
+            <figure class="intro-round">
                 <img src="images/profileCartoon.png" onmouseover="this.src='images/profile.png'"
-                onmouseout="this.src='images/profileCartoon.png'" alt="picture of Enon" class="intro__img">
-            </div>
+                onmouseout="this.src='images/profileCartoon.png'" alt="picture of cartoon Enon" class="intro__img">
+            </figure>
         </div>
     </header>
 
-    <!-- My Work -->
-    <section class="flex">
-        <div class="pointer-anim">
-            <div class="my-work-banner">
-                <h2 class="section__title section__title--work">My Work</h2>
-                <h4 class="section__title section__subtitle--work">A selection of my range of work</h4>           
-            </div>
-            <div class="pointer"></div>
-        </div>
-        
-    </section>
-
-    <section class="my-work" id="work">
-        <div class="cards">
-            <!-- Card Item 01 -->
-            <figure class="card-item">
-                <div>
-                    <img src="images/project6.png" alt="" class="card-item-img"> 
-                </div>
-                <figcaption class="fig-one">
-                    <h3 class="card-item-header">Spotify Playlist Manager</h3>
-                    <div class="card-item-info">
-                        <h4>Using Firebase & Spotify API. CMS app for managing spotify tracks, saving to DB, 
-                            comparing history.
-                        </h4>
-                        <p>Made with: React, CSS, Firebase, Spotify API</p>
-                        <button class="btn" onclick="window.open('https://github.com/haldevone/SpotifyPlaylistManager','_blank', 'noopener noreferrer')">
-                            Git  <i class="fab fa-github"></i>
-                        </button>
+    <main>
+        <article>
+            <!-- My Work -->
+            <section class="flex">
+                <div class="pointer-anim">
+                    <div class="my-work-banner">
+                        <h2 class="section__title section__title--work">My Work</h2>
+                        <h4 class="section__title section__subtitle--work">A selection of my range of work</h4>           
                     </div>
-                </figcaption>
-            </figure>
-
-            <!-- Card Item 02 -->
-            <figure class="card-item">
-                <div>
-                    <img src="images/project7.png" alt="" class="card-item-img">
-                </div>
-                <figcaption>
-                    <h3 class="card-item-header">Food App</h3>
-                    <div class="card-item-info">
-                        <h4>Simple e-commerce Front End only Example Site.</h4>
-                        <p>Made with: React, SASS</p>
-                        <div class="git-btn">
-                            <button class="btn" onclick="window.open('https://github.com/haldevone/foodApp','_blank', 'noopener noreferrer')">
-                                Git  <i class="fab fa-github"></i>
-                            </button>
-                            <button class="btn" onclick="window.open('https://haldevsfood.netlify.app/', 'noopener noreferrer')">
-                                Visit
-                            </button>
-                        </div> 
-                    </div>
-                </figcaption>
-            </figure>
-            <!-- Card Item 03 -->
-            <figure class="card-item">
-                <div>
-                    <img src="images/project5.png" alt="" class="card-item-img">
-                </div>
-                <figcaption>
-                    <h3 class="card-item-header">Transaction App</h3>
-                    <div class="card-item-info">
-                        <h4>Transaction app with firebase.User login, store your shopping transactions. Get overview in D3 pie chart</h4>
-                        <p>Made with: React, CSS, D3, Firebase, Typescript</p>
-                        <button class="btn" onclick="window.open('https://github.com/haldevone/transaction-app','_blank', 'noopener noreferrer')">
-                            Git  <i class="fab fa-github"></i>
-                        </button>
-                    </div>
-                </figcaption>
-            </figure>
-
-            <!-- Card Item 04 -->
-            <figure class="card-item">
-                <div>
-                    <img src="images/project1.png" alt="" class="card-item-img"> 
-                </div>
-                <figcaption class="fig-one">
-                    <h3 class="card-item-header">CMS Blog Site</h3>
-                    <div class="card-item-info">
-                        <h4>Blog site with CMS & MySQL database. </h4>
-                        <p>Made with: HTML, CSS, JS, PHP, MySQL</p>
-                        <button class="btn" onclick="window.open('http://haldevone.com','_blank', 'noopener noreferrer')">
-                            Visit
-                        </button>                        
-                    </div>
-                </figcaption>
-            </figure>
-
-             <!-- Card Item 05 -->
-             <figure class="card-item">
-                <div>
-                    <img src="images/project4.png" alt="" class="card-item-img">
-                </div>
-                <figcaption>
-                    <h3 class="card-item-header">Client Dentist site</h3>
-                    <div class="card-item-info">
-                        <h4>Dentist Homepage with Next js</h4>
-                        <p>Made with: Next, CSS</p>
-                        <div class="git-btn">
-                            <button class="btn" onclick="window.open('https://vedumstandvard.netlify.app/','_blank', 'noopener noreferrer')">
-                                Visit
-                            </button>
-                            <button class="btn" onclick="window.open('https://github.com/haldevone/vedumsnext','_blank', 'noopener noreferrer')">
-                                Git  <i class="fab fa-github"></i>
-                            </button>
-                        </div>
-                    </div>
-                </figcaption>
-            </figure>
-
-            <!-- Card Item 06 -->
-            <figure class="card-item">
-                <div>
-                    <img src="images/project2.png" alt="" class="card-item-img">
-                </div>
-                <figcaption>
-                    <h3 class="card-item-header">Mobile App Game</h3>
-                    <div class="card-item-info">
-                        <h4>Mobile game for children. Available at Google Play & App store</h4>
-                        <p>Made with: C#, Unity</p>
-                        <button class="btn" onclick="window.open('https://apps.apple.com/us/app/panda-addie-play-learn/id1486103714','_blank', 'noopener noreferrer')">
-                            App store
-                        </button>
-                    </div>
-                </figcaption>
-            </figure>
-
-            <!-- Card Item 07 -->
-            <figure class="card-item">
-                <div>
-                    <img src="images/project3.png" alt="" class="card-item-img">
-                </div>
-                <figcaption>
-                    <h3 class="card-item-header">Web Game</h3>
-                    <div class="card-item-info">
-                        <h4>Hangman with Star Wars API from swapi.dev</h4>
-                        <p>Tech: React, Redux, CSS</p>
-                        <div class="git-btn">
-                            <button class="btn" onclick="window.open('https://thehangmanreact.netlify.app/','_blank', 'noopener noreferrer')" >
-                                Visit
-                            </button>
-                            <button class="btn" onclick="window.open('https://github.com/haldevone/hangman','_blank', 'noopener noreferrer')">
-                            Git  <i class="fab fa-github"></i>
-                            </button>
-                        </div>
-                        
-                    </div>
-                </figcaption>
-            </figure>
-
-        </div>
-    </section>
-
-    <!-- My Skill -->
-    <section class="my-skills" id="skills">
-        <h2 class="section__title section__title--skills">What I do</h2>
-    </section>
-    <section class="skills-container">
-        <div class="skills-wrapper">
-            <div class="skills">
-                <!--/ skill -->
-                <div class="skill">
-                    <img src="images/mobile2.png" alt="" class="skill-img">
-                    <h3 class="skill-header">Web Development</h3>
-                    <h4 class="skill-subheader">My Tech Languages:</h4>
-                    <p>Html, Css, Javascript</p>
-                    <p>React, Sass</p>
-                    <p>Github, Firebase, MySQL</p>
+                    <div class="pointer"></div>
                 </div>
                 
-                <!--/ skill -->
-                <div class="skill">
-                    <img src="images/brush.png" alt="" class="skill-img">
-                    <h3 class="skill-header">Design</h3>
-                    <h4 class="skill-subheader">My Design Software:</h4>
-                    <p>Photoshop, Blender</p>
-                    <p>3d Coat, Substance painter</p>
-                </div>
-                <div class="skill">
-                    <img src="images/gameController2.png" alt="" class="skill-img">
-                    <h3 class="skill-header">Game Development</h3>
-                    <h4 class="skill-subheader">My Game Tech:</h4>
-                    <p>Unity</p>
-                    <p>C#</p>
-                </div>
-                <!--/ skill -->
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- About Me -->
-    <section class="about-me" id="about">
-        <div class="about-me-container">
-            <h2 class="section__title section__title--about">Who I am</h2>
-            <h3 class="section__subtitle section__subtitle--about">
-                Developer based out of Stockholm
-            </h3>
-            <p>
-                I’ve always been a person who has both a logical and a creative side and therefore choosing 
-                Web/Game development was a perfect match for me. I am self-taught and my passion for this 
-                industry has made it easy for me to study and I always strive for updating my knowledge.
-            </p>
-            
-        </div>
-        <img src="images/profileCartoonFront.png" alt="" class="about-me-img">
+            <section class="my-work" id="work">
+                <div class="cards">
+                    <!-- Card Item 01 -->
+                    <figure class="card-item">
+                        <figure>
+                            <img src="images/project6.png" alt="Spotify playlist manager" class="card-item-img"> 
+                        </figure>
+                        <figcaption class="fig-one">
+                            <h3 class="card-item-header">Spotify Playlist Manager</h3>
+                            <div class="card-item-info">
+                                <h4>Using Firebase & Spotify API. CMS app for managing spotify tracks, saving to DB, 
+                                    comparing history.
+                                </h4>
+                                <p>Made with: React, CSS, Firebase, Spotify API</p>
+                                <button class="btn" onclick="window.open('https://github.com/haldevone/SpotifyPlaylistManager','_blank', 'noopener noreferrer')">
+                                    Git  <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </figcaption>
+                    </figure>
 
-    </section>
+                    <!-- Card Item 02 -->
+                    <figure class="card-item">
+                        <div>
+                            <img src="images/project7.png" alt="Food app example" class="card-item-img">
+                        </div>
+                        <figcaption>
+                            <h3 class="card-item-header">Food App</h3>
+                            <div class="card-item-info">
+                                <h4>Simple e-commerce Front End only Example Site.</h4>
+                                <p>Made with: React, SASS</p>
+                                <div class="git-btn">
+                                    <button class="btn" onclick="window.open('https://github.com/haldevone/foodApp','_blank', 'noopener noreferrer')">
+                                        Git  <i class="fab fa-github"></i>
+                                    </button>
+                                    <button class="btn" onclick="window.open('https://haldevsfood.netlify.app/', 'noopener noreferrer')">
+                                        Visit
+                                    </button>
+                                </div> 
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <!-- Card Item 03 -->
+                    <figure class="card-item">
+                        <div>
+                            <img src="images/project5.png" alt="Transaction App" class="card-item-img">
+                        </div>
+                        <figcaption>
+                            <h3 class="card-item-header">Transaction App</h3>
+                            <div class="card-item-info">
+                                <h4>Transaction app. User auth and database with firebase. Get overview in D3 pie chart</h4>
+                                <p>Made with: React, CSS, D3, Firebase, Typescript</p>
+                                <button class="btn" onclick="window.open('https://github.com/haldevone/transaction-app','_blank', 'noopener noreferrer')">
+                                    Git  <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Card Item 04 -->
+                    <figure class="card-item">
+                        <div>
+                            <img src="images/project1.png" alt="haldevone website" class="card-item-img"> 
+                        </div>
+                        <figcaption class="fig-one">
+                            <h3 class="card-item-header">CMS & Blog Site</h3>
+                            <div class="card-item-info">
+                                <h4>Haldevone site with Blog & own CMS, MySQL database.</h4>
+                                <p>Made with: HTML, CSS, JS, PHP, MySQL</p>
+                                <button class="btn" onclick="window.open('http://haldevone.com','_blank', 'noopener noreferrer')">
+                                    Visit
+                                </button>                        
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Card Item 05 -->
+                    <figure class="card-item">
+                        <div>
+                            <img src="images/project4.png" alt="Dentist site" class="card-item-img">
+                        </div>
+                        <figcaption>
+                            <h3 class="card-item-header">Dentist site</h3>
+                            <div class="card-item-info">
+                                <h4>Dentist Homepage with Next js</h4>
+                                <p>Made with: Next.js, CSS</p>
+                                <div class="git-btn">
+                                    <button class="btn" onclick="window.open('https://vedumstandvard.netlify.app/','_blank', 'noopener noreferrer')">
+                                        Visit
+                                    </button>
+                                    <button class="btn" onclick="window.open('https://github.com/haldevone/vedumsnext','_blank', 'noopener noreferrer')">
+                                        Git  <i class="fab fa-github"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Card Item 06 -->
+                    <figure class="card-item">
+                        <div>
+                            <img src="images/project2.png" alt="Panda addie mobile app" class="card-item-img">
+                        </div>
+                        <figcaption>
+                            <h3 class="card-item-header">Mobile App Game</h3>
+                            <div class="card-item-info">
+                                <h4>Mobile game for children. Available at Google Play & App store</h4>
+                                <p>Made with: C#, Unity</p>
+                                <button class="btn" onclick="window.open('https://apps.apple.com/us/app/panda-addie-play-learn/id1486103714','_blank', 'noopener noreferrer')">
+                                    App store
+                                </button>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Card Item 07 -->
+                    <figure class="card-item">
+                        <div>
+                            <img src="images/project3.png" alt="Hangman starwars" class="card-item-img">
+                        </div>
+                        <figcaption>
+                            <h3 class="card-item-header">Web Game</h3>
+                            <div class="card-item-info">
+                                <h4>Hangman with Star Wars API from swapi.dev</h4>
+                                <p>Tech: React, Redux, CSS</p>
+                                <div class="git-btn">
+                                    <button class="btn" onclick="window.open('https://thehangmanreact.netlify.app/','_blank', 'noopener noreferrer')" >
+                                        Visit
+                                    </button>
+                                    <button class="btn" onclick="window.open('https://github.com/haldevone/hangman','_blank', 'noopener noreferrer')">
+                                    Git  <i class="fab fa-github"></i>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </section>
+
+            <!-- My Skill -->
+            <section class="my-skills" id="skills">
+                <h2 class="section__title section__title--skills">What I do</h2>
+            </section>
+            <section class="skills-container">
+                <div class="skills-wrapper">
+                    <div class="skills">
+                        <!--/ skill -->
+                        <div class="skill">
+                            <figure>
+                                <img src="images/mobile2.png" alt="mobile logo" class="skill-img">
+                            </figure>
+                            <h3 class="skill-header">Web Development</h3>
+                            <h4 class="skill-subheader">My Tech Languages:</h4>
+                            <p>Html, Css, Javascript</p>
+                            <p>React, Sass</p>
+                            <p>Github, Firebase, MySQL</p>
+                        </div>
+                        
+                        <!--/ skill -->
+                        <div class="skill">
+                            <figure>
+                                <img src="images/brush.png" alt="brush logo" class="skill-img">
+                            </figure>
+                            <h3 class="skill-header">Design</h3>
+                            <h4 class="skill-subheader">My Design Software:</h4>
+                            <p>Photoshop, Blender</p>
+                            <p>3d Coat, Substance painter</p>
+                        </div>
+                        <div class="skill">
+                            <figure>
+                                <img src="images/gameController2.png" alt="game controller logo" class="skill-img">
+                            </figure>
+                            <h3 class="skill-header">Game Development</h3>
+                            <h4 class="skill-subheader">My Game Tech:</h4>
+                            <p>Unity</p>
+                            <p>C#</p>
+                        </div>
+                        <!--/ skill -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Me -->
+            <section class="about-me" id="about">
+                <div class="about-me-container">
+                    <h2 class="section__title section__title--about">Who I am</h2>
+                    <h3 class="section__subtitle section__subtitle--about">
+                        Developer based out of Stockholm
+                    </h3>
+                    <p>
+                        I’ve always been a person who has both a logical and a creative side and therefore choosing 
+                        Web/Game development was a perfect match for me. I am self-taught and my passion for this 
+                        industry has made it easy for me to study and I always strive for updating my knowledge.
+                    </p>
+                    
+                </div>
+                <figure>
+                    <img src="images/profileCartoonFront.png" alt="cartoon enon" class="about-me-img">
+                </figure>
+
+            </section>
+        </article>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -292,6 +301,7 @@
                 </a>
             </li>
         </ul>
+        <p><script>document.write("&copy " + new Date().getFullYear() + " HalDevOne")</script></p>
     </footer>
 <script src="js/index.js"></script>
 </body>
