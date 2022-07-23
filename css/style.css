@@ -16,8 +16,8 @@
     --fw-bold: 900;
 
     --color-light: #FDF7FF;
-    --color-light-dark: #615b6d8a;
-    --color-dark: #2b223a;
+    --color-light-dark: #d6cfe58a;
+    --color-dark: #3e364a;
     --color-accent: #320fce;
     --color-medium:#7510F7;
     --color-accentTwo: #6929ff;
@@ -662,10 +662,10 @@ header {
 .section__title--skills::after {
     content: '';
     display: block;
-    width: 3em;
+    width: 5em;
     height: 3px;
     margin: 0.5em auto 1em;
-    background: var(--color-light);
+    background: white;
     opacity: 0.25;
 }
 
