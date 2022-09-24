@@ -845,6 +845,8 @@ header {
     color: var(--color-dark);
     text-align: center;
     margin-bottom: 8rem;
+    max-width: 76rem;
+    margin: 0 auto;
 }
 
 .cards{
