@@ -2,7 +2,7 @@ const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav__link");
 
 
-window.location.href = "https://haldevone.com/portfolio/";
+window.location.href = "https://webdev.haldevone.com/portfolio/";
 
 navToggle.addEventListener("click", () => {
     document.body.classList.toggle("nav-open");
